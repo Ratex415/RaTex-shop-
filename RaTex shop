@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaTex Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .service-item h3 {
+            margin-top: 0;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .rating span {
+            margin-right: 10px;
+        }
+
+        .rating input {
+            width: 50px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RaTex Shop</h1>
+    <p>متخصصون في تقديم خدمات لعبة بلوكس فروت</p>
+</header>
+
+<section>
+    <h2>الخدمات المتوفرة</h2>
+    <ul class="service-list">
+        <li class="service-item">
+            <h3>تلفيل حسابات</h3>
+            <p>رفع مستوى الحسابات في لعبة بلوكس فروت.</p>
+        </li>
+        <li class="service-item">
+            <h3>تجميع فلوس</h3>
+            <p>جمع العملات في اللعبة.</p>
+        </li>
+        <li class="service-item">
+            <h3>تجميع فراقمنت</h3>
+            <p>تجميع قطع الفراقمنت (Fragments) في اللعبة.</p>
+        </li>
+        <li class="service-item">
+            <h3>تجميع موارد</h3>
+            <p>جمع الموارد المتنوعة في اللعبة.</p>
+        </li>
+        <li class="service-item">
+            <h3>تجميع سيوف</h3>
+            <p>تجميع السيوف في اللعبة.</p>
+        </li>
+        <li class="service-item">
+            <h3>تجميع Accesoires</h3>
+            <p>تجميع الأكسسوارات في اللعبة.</p>
+        </li>
+        <li class="service-item">
+            <h3>أجيبلك ترس (gear)</h3>
+            <p>أحصل على الترس المطلوب.</p>
+        </li>
+        <li class="service-item">
+            <h3>أجيبلك V4</h3>
+            <p>أحصل على نسخة V4 في اللعبة.</p>
+        </li>
+        <li class="service-item">
+            <h3>أجيبلك أي ريس</h3>
+            <p>أحصل على أي نوع من الريس في اللعبة.</p>
+        </li>
+        <li class="service-item">
+            <h3>أجيبلك ألوان هاكي</h3>
+            <p>أحصل على ألوان هاكي المميزة في اللعبة.</p>
+        </li>
+    </ul>
+
+    <h2>أسعار الخدمات</h2>
+    <ul class="service-list">
+        <li class="service-item">
+            <p>فواكه بلوكس فروت أو كريدت ديسكورد أو TND.</p>
+        </li>
+    </ul>
+
+    <div class="contact-info">
+        <h2>تواصل مع خدمة العملاء</h2>
+        <p>يمكنك التواصل مع خدمة العملاء عبر منصة ديسكورد: <a href="https://discord.com/invite/YOUR_DISCORD_INVITE" target="_blank">اضغط هنا للانضمام إلى ديسكورد</a>.</p>
+    </div>
+
+    <div class="rating">
+        <span>تقييم الموقع:</span>
+        <input type="range" min="1" max="5" value="5" id="ratingSlider">
+        <span id="ratingValue">5</span> نجوم
+    </div>
+</section>
+
+<script>
+    // تحديث التقييم عند تغيير الشريط
+    document.getElementById('ratingSlider').addEventListener('input', function() {
+        document.getElementById('ratingValue').textContent = this.value;
+    });
+</script>
+
+</body>
+</html>
